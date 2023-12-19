@@ -1,0 +1,22 @@
+cores escuras
+#06121E
+#040f1a
+#0c2135
+
+#090d11
+#06090c
+#1a1f25
+
+cores neutras
+#232224
+#161617
+#353436
+
+#ffffff
+#EDEAEF
+#fefbff
+
+cores auxiliares
+#D94140
+#b42b2b
+#d34040
