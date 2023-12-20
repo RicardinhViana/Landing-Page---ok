@@ -1,0 +1,34 @@
+header{
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i{
+    color: #ffffff;
+}
+
+.header-icons{
+    display: flex;
+    gap: 16px;
+}
+
+.header-icons a:hover{
+    i{
+        transition: translateY 0.8s;
+        color: red;
+    }
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }   
+}
