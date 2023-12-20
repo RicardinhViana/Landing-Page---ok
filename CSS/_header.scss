@@ -1,24 +1,30 @@
-:root{
-  --primary-normal:#06121E;
-  --primary-dark:#040f1a;
-  --primary-light:#0c2135;
+:root {
+  --primary-normal: #06121E;
+  --primary-dark: #040f1a;
+  --primary-light: #0c2135;
 
-  --primary-normal1:#090d11;
-  --primary-dark1:#06090c;
-  --primary-light1:#1a1f25;
+  --primary-normal1: #090d11;
+  --primary-dark1: #06090c;
+  --primary-light1: #1a1f25;
 
-  --primary-gray-normal:#232224;
-  --primary-gray-dark:#161617;
-  --primary-gray-light:#353436;
+  --primary-gray-normal: #232224;
+  --primary-gray-dark: #161617;
+  --primary-gray-light: #353436;
 
-  --primary-withe-normal:#ffffff;
-  --primary-withe-dark:#EDEAEF;
-  --primary-withe-ligth:#fefbff;
+  --primary-withe-normal: #ffffff;
+  --primary-withe-dark: #EDEAEF;
+  --primary-withe-ligth: #fefbff;
 
-  --primary-red-normal:#D94140;
-  --primary-red-dark:#b42b2b;
-  --primary-red-light:#d34040;
+  --primary-red-normal: #D94140;
+  --primary-red-dark: #b42b2b;
+  --primary-red-light: #d34040;
+
+  --primary-gold-normal: #ffd700;
+  --primary-gold-dark: #423800;
+  --primary-gold-light: #ffe44e;
+  --primary-gold-light1: #695b53;
 }
+
 // FIM ROOT
 
 header {
@@ -32,7 +38,7 @@ header {
 }
 
 i {
-  color: var(--primary-withe-ligth);
+  color: var(--primary-withe-normal);
 }
 
 .header-icons {
@@ -43,7 +49,7 @@ i {
 .header-icons a:hover {
   i {
     animation: translateY 0.8s infinite alternate;
-    color: var(--primary-red-light);
+    color: var(--primary-gold-light1);
   }
 }
 
@@ -51,26 +57,27 @@ i {
   from {
     transform: translateY(0) scale(1);
   }
+
   to {
     transform: translateY(-8px) scale(1.1);
   }
 }
 
 .header-button a {
-  border: 1px solid var(--primary-withe-ligth);
+  border: 1px solid var(--primary-gold-light1);
   border-radius: 4px;
 
   padding: 8px 24px;
 
-  color: var(--primary-withe-ligth);
+  color: var(--primary-withe-normal);
   background-color: transparent;
 
   transition: 0.8s;
 }
 
 .header-button:hover a {
-  border: 1px solid var(--primary-red-dark);
-  background-color: var(--primary-red-dark);
+  border: 1px solid var(--primary-gold-light1);
+  background-color: var(--primary-gold-light1);
 }
 
 .header-logo {
@@ -79,6 +86,7 @@ i {
   justify-content: center;
   margin-top: 14px;
 }
+
 // FIM DESKTOP
 
 @media screen and (max-width: 768px) {

@@ -18,6 +18,11 @@
     --primary-red-normal: #D94140;
     --primary-red-dark: #b42b2b;
     --primary-red-light: #d34040;
+
+    --primary-gold-normal: #ffd700;
+    --primary-gold-dark: #423800;
+    --primary-gold-light: #ffe44e;
+    --primary-gold-light1: #695b53;
 }
 
 .container {
@@ -50,7 +55,7 @@
 
 
 .hero {
-    color: var(--primary-withe-dark);
+    color: var(--primary-withe-normal);
     min-width: 80vh;
 
     display: flex;
@@ -76,7 +81,7 @@
 .button-contact {
     padding: 14px 28px;
     color: var(--primary-withe-normal);
-    background-color: var(--primary-red-dark);
+    background-color: var(--primary-gold-light1);
     border: 0;
     border-radius: 5px;
     font-size: 18px;
@@ -123,47 +128,55 @@
         font-size: 17px;
     }
 }
+
 // FIM HERO
 
 // INICIO ABOUT
 
-.about{
+.about {
     background-color: var(--primary-normal);
     overflow: hidden;
     color: var(--primary-withe-dark);
 }
 
-.about-content{
+.about-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 14px;
     padding: 34px 14px 64px 14px;
 
-    img{
+    img {
         max-width: 570px;
     }
 }
 
-.about-content div{
+.about-content div {
     flex: 1;
 }
 
-.about-description{
-    h2{
+.about-description {
+    h2 {
         font-size: 38px;
         margin-bottom: 24px;
+        color: var(--primary-withe-ligth);
     }
-    p{
+
+    p {
         margin-bottom: 14px;
         line-height: 150%;
+        color: var(--primary-withe-ligth);
+    }
+
+    strong {
+        color: var(--primary-withe-normal);
     }
 }
 
 @media screen and (max-width: 760px) {
-    .about-content{
+    .about-content {
         flex-direction: column;
-    }   
+    }
 }
 
 // FIM ABOUT
