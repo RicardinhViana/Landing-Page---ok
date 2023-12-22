@@ -5,6 +5,7 @@
 
     --primary-normal1: #090d11;
     --primary-dark1: #06090c;
+    --primary-dark-transparent: #06090c8e;
     --primary-light1: #1a1f25;
 
     --primary-gray-normal: #232224;
@@ -268,3 +269,78 @@
 // FIM SERVICES
 
 // FOOTER
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 54px 0;
+    gap: 20px;
+
+    color: var(--primary-withe-normal);
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    color: var(--primary-withe-dark);
+}
+
+.footer-icons a:hover {
+    i {
+        animation: translateY 0.8s infinite alternate;
+        color: var(--primary-gold-light1);
+    }
+}
+
+// BOTAO DO WATS
+
+
+.btn-whatssapp {
+    position: fixed;
+    bottom: 14px;
+    right: 20px;
+    z-index: 99;
+
+    img {
+        max-width: 70px;
+        transition: transform 0.4s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+.btn-whatssapp .tooltip-text {
+    width: 120px;
+    top: 8px;
+    left: -150px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+
+    background-color: var(--primary-dark-transparent);
+    color: var(--primary-withe-normal);
+
+    opacity: 0;
+    transition: opacity 0.4s;
+
+    visibility: hidden;
+    position: absolute;
+}
+
+.btn-whatssapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 780px) {
+    .btn-whatssapp {
+        max-width: 50px;
+    }
+
+}
