@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
     <div class="bg-home">
         <header>
             <nav class="header-content container">
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-right" data-aos-delay="100">
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -36,21 +38,25 @@
                     </a>
                 </div>
 
-                <div class="header-logo">
-                    <img src="Img/logo.svg" alt="logo-barbearia">
+                <div class="header-logo" data-aos="fade-down" data-aos-delay="300">
+                    <img data-aos="flip-up" data-aos-delay="400" data-aos-duration="1700" src="Img/logo.svg"
+                        alt="logo-barbearia">
                 </div>
 
-                <div class="header-button">
-                    <a href="#">Agendar horário</a>
+                <div class="header-button" data-aos="fade-left" data-aos-delay="100">
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5512999999999&text=Quero%20agendar%20um%20hor%C3%A1rio.">Agendar
+                        horário</a>
                 </div>
 
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="flip-up" data-aos-delay="400" data-aos-duration="1700">
                 <h1>Estilo é um reflexo da sua atitude e sua personalidade.</h1>
                 <p>Horário de funcionamento: 09:00 ás 19:00</p>
                 <!-- LINK DO WATS NO AGENDAR HORARIO -->
-                <a href="#" class="button-contact" target="_blank">Agendar horário</a>
+                <a href="https://api.whatsapp.com/send?phone=5512999999999&text=Quero%20agendar%20um%20hor%C3%A1rio."
+                    class="button-contact" target="_blank">Agendar horário</a>
             </main>
 
         </header>
@@ -60,10 +66,10 @@
     <!-- INICIO ABOUT -->
     <section class="about">
         <div class="container about-content">
-            <div><img src="Img/images.svg" alt="Imagem da Barbearia">
+            <div><img data-aos="zoom-in-right" data-aos-delay="245" src="Img/images.svg" alt="Imagem da Barbearia">
             </div>
 
-            <div class="about-description">
+            <div class="about-description" data-aos="zoom-out-left" data-aos-delay="250">
                 <h2>Sobre(A barbearia)</h2>
                 <p>(experiencia do dono) Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus.
                     Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem
@@ -77,28 +83,33 @@
 
     <!-- SERVICES -->
     <section class="services ">
-        <div class="services-content container">
+        <div data-aos="flip-up" data-aos-delay="400" data-aos-duration="1700" class="services-content container">
             <h2>Serviços</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae non impedit libero porro in,
                 voluptas nemo maiores ad odit!</p>
         </div>
 
         <section class="haircuts">
-            <div class="haircut">
+            <div data-aos="fade-right" data-aos-delay="100" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                class="haircut">
                 <img src="Img/corte1.png" alt="Corte-1">
                 <div class="haircut-info">
                     <strong>Corte normal</strong>
                     <button>R$ 30,00</button>
                 </div>
             </div>
-            <div class="haircut">
+
+            <div data-aos="fade-up" data-aos-delay="700" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                class="haircut">
                 <img src="Img/corte2.png" alt="Corte-2">
                 <div class="haircut-info">
                     <strong>Barba</strong>
                     <button>R$ 35,00</button>
                 </div>
             </div>
-            <div class="haircut">
+
+            <div data-aos="fade-left" data-aos-delay="400" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                class="haircut">
                 <img src="Img/corte3.png" alt="Corte-3">
                 <div class="haircut-info">
                     <strong>Barba e cabelo</strong>
@@ -111,15 +122,15 @@
 
     <!-- INICIO FOOTER -->
     <div class="services">
-        <h2>Venha conhecer a nossa loja.</h2>
+        <h2>Venha conhecer a nossa barbearia.</h2>
     </div>
-
-    <!-- Local onde vai ficar o MAPS da localização -->
-    <iframe width="100%" src="#?" frameborder="0">
-    </iframe>
+    <iframe width="100%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7315.455399997892!2d-46.63490785109494!3d-23.54229429188244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f8c61020205%3A0x9ae474c606fef4!2sMercado%20Municipal%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1703255393639!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:solid 0.5px #06121E;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
 
     <footer class="footer">
-        <div class="footer-icons">
+        <div data-aos="flip-down" data-aos-duration="1700" class="footer-icons">
             <a href="#">
                 <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
@@ -132,20 +143,22 @@
         </div>
 
         <div>
-            <img src="Img/logo.svg" alt="logo-barbearia">
+            <img data-aos="flip-down" data-aos-duration="1700" src="Img/logo.svg" alt="logo-barbearia">
         </div>
 
         <p>Copyright 2023 | Dev Barbearia - Direitos resevados</p>
 
     </footer>
 
-    <!-- BOTAO WATS -->
-    <!-- No HREF colocar o link do wats mudando o numero e o texto (no endereco) -->
-    <a href="#" class="btn-whatssapp" target="_blank">
+    <!-- BOTÃO WATS -->
+
+    <a href="https://api.whatsapp.com/send?phone=5512999999999&text=Quero%20agendar%20um%20hor%C3%A1rio."
+        class="btn-whatssapp" target="_blank">
         <img src="Img/whatssapp.svg" alt="Botao whatssapp">
         <span class="tooltip-text">Agende seu horário aqui. </span>
     </a>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
