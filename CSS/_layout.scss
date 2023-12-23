@@ -126,6 +126,16 @@
         p {
             display: none;
             // text-decoration: none;
+        }
+
+        button-contact{
+            font-size: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            padding: 0 18px;
+            width: 60%;
 
         }
     }
