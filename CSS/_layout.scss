@@ -316,11 +316,11 @@
 .btn-whatssapp {
     position: fixed;
     bottom: 14px;
-    right: 20px;
-    z-index: 99;
+    right: 24px;
+    z-index: 199;
 
     img {
-        max-width: 70px;
+        max-width: 74px;
         transition: transform 0.4s;
     }
 
@@ -333,7 +333,7 @@
 .btn-whatssapp .tooltip-text {
     width: 120px;
     top: 8px;
-    left: -150px;
+    left: -180px;
     padding: 6px;
     border-radius: 8px;
     text-align: center;
@@ -353,9 +353,8 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 780px) {
-    .btn-whatssapp {
-        max-width: 50px;
-    }
+@media screen and (max-width: 768px) {
+    .btn-whatssapp 
+        img{max-width: 64px;}
 
 }
