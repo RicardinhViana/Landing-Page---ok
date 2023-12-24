@@ -422,9 +422,12 @@ i {
 }
 
 @media screen and (max-width: 768px) {
-  .btn-whatssapp 
-      img{max-width: 64px;}
-
+  .btn-whatssapp .tooltip-text{ 
+    img{
+      max-width: 64px;
+      left: -2000px;
+    }
+  }
 }
 
 :root {
