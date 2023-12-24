@@ -57,17 +57,17 @@
 
 .hero-content {
     color: var(--primary-withe-normal);
-    min-width: 80vh;
+    min-height: 80vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 90px;
+    padding: 14px;
 
     h1 {
         text-align: center;
-        line-height: 45px;
+        line-height: 150%;
         max-width: 940px;
         font-size: 40px;
     }
@@ -75,7 +75,6 @@
     p {
         text-align: center;
         margin: 14px 0;
-        padding: 10px;
     }
 }
 
@@ -104,27 +103,32 @@
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .hero-content {
-        margin: 0;
-        flex-direction: column;
+        // margin: 0;
+        // flex-direction: column;
         min-height: 60vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: center;
+        // display: flex;
+        // flex-wrap: wrap;
+        // align-items: baseline;
+        // justify-content: center;
 
         h1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 25px;
-            padding: 0 18px;
-            width: 60%;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // font-size: 25px;
+            // padding: 0 18px;
+            // width: 60%;
+
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
         }
 
         p {
-            display: none;
+            // display: none;
+            font-size: 14px;
         }
 
         button-contact{
@@ -143,7 +147,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .hero h1 {
+    .hero-content h1 {
         font-size: 24px;
     
 
